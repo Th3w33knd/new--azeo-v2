@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .container {
+        @apply mx-auto px-6 2xl:px-24;
+    }
+}
+
+.form-input {
+    @apply input input-bordered input-accent w-full rounded-none;
+}
+
+.form-textarea {
+    @apply textarea textarea-bordered textarea-accent w-full rounded-none;
+}

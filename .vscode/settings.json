@@ -1,0 +1,9 @@
+{
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/.venv": true,
+        "**/.vscode": true,
+        "**/__pycache__": true,
+        "**/migrations": true
+    }
+}

@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block title %}AzeoID Registration{% endblock title %}
+
+{% block content %}
+	{% load static %}
+	<section class="py-24">
+	    <div class="container">
+	        <div class="grid grid-cols-12 gap-6">
+	            <div class="col-span-12 sm:col-span-7">
+	                <h1 class="text-5xl font-serif font-bold mb-6">AZeo ID</h1>
+	                <p>The AZeo ID will help you to register for the upcoming events, workshops, and competitions of AZeotropy. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur est odio non.</p>
+	            </div>
+	            <div class="col-span-1 hidden sm:block"></div>
+	            <div class="col-span-4 hidden sm:block md:hidden">
+	                <div class="border-4 border-base-content relative md:bottom-[320px] xl:bottom-[280px]">
+	                    <img src="{% static 'imgs/azeoid-registration-01.jpg' %}" alt="AZeotropy Event" class="w-full">
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</section><!-- Page Header -->
+
+	<main class="bg-base-content py-16">
+	    <div class="container">
+	        <div class="grid grid-cols-12 gap-6">
+	            <div class="col-span-12 md:col-span-7">
+	                <h3 class="text-xl tracking-wider uppercase text-base-100">Registration Form</h3>
+	                <form method="POST" class="grid 2xl:grid-cols-2 gap-6 mt-6" autocomplete="off">
+	                	{% csrf_token %}
+	                    <div>
+	                        <label for="{{ form.fname.id_for_label }}" class="label text-base-300 text-xs">First Name</label>
+	                        {{ form.fname }}
+	                    </div>
+	                    <div>
+	                        <label for="{{ form.lname.id_for_label }}" class="label text-base-300 text-xs">Last Name</label>
+	                        {{ form.lname }}
+	                    </div>
+	                    <div>
+	                        <label for="{{ form.phone.id_for_label }}" class="label text-base-300 text-xs">Phone No.</label>
+	                        {{ form.phone }}
+	                    </div>
+	                    <div>
+	                        <label for="{{ form.alt_phone.id_for_label }}" class="label text-base-300 text-xs">Alternate Phone No.</label>
+	                        {{ form.alt_phone }}
+	                    </div>
+	                    <div>
+	                        <label for="{{ form.email.id_for_label }}" class="label text-base-300 text-xs">Email</label>
+	                        {{ form.email }}
+	                    </div>
+	                    <div>
+	                        <label for="{{ form.curr_year.id_for_label }}" class="label text-base-300 text-xs">Current Year</label>
+	                        {{ form.curr_year }}
+	                    </div>
+	                    <div class="col-span-2">
+	                        <label for="{{ form.university.id_for_label }}" class="label text-base-300 text-xs">University</label>
+	                        {{ form.university }}
+	                    </div>
+	                    <div class="col-span-2">
+	                        <label for="{{ form.address.id_for_label }}" class="label text-base-300 text-xs">Permanent Address</label>
+	                        {{ form.address }}
+	                    </div>
+	                    <div>
+	                        <label for="{{ form.state.id_for_label }}" class="label text-base-300 text-xs">State</label>
+	                        {{ form.state }}
+	                    </div>
+	                    <div>
+	                        <label for="{{ form.pincode.id_for_label }}" class="label text-base-300 text-xs">Pin Code</label>
+	                        {{ form.pincode }}
+	                    </div>
+	                    <div class="col-span-2 mt-6">
+	                        <button type="submit" class="btn btn-accent btn-block btn-primary rounded-none">Submit &rarr;</button>
+	                    </div>
+	                </form>
+	            </div>
+	            <div class="col-span-1 hidden lg:block"></div>
+	            <div class="col-span-4 hidden md:block">
+	                <div class="border-4 border-base-content relative md:bottom-[320px] xl:bottom-[280px]">
+	                    <img src="{% static 'imgs/azeoid-registration-01.jpg' %}" alt="AZeotropy Event" class="w-full">
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</main><!-- Registration Form -->
+{% endblock content %}

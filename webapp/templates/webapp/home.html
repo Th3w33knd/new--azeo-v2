@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+    {% load static %}
+    <main>
+        <div class="hero relative">
+            <img class="w-full h-[600px] object-cover object-center" src="{% static "imgs/hero-cover.jpg" %}" alt="Azeotropy Cover Image">
+            <div class="absolute top-1/2 -translate-y-1/2 border border-teal-200 backdrop-blur-sm py-6 px-10 text-white">
+                <h1 class="text-7xl text-center font-bold tracking-widest uppercase mb-2">AZEOTROPY</h1>
+                <p class="text-xl text-center font-light tracking-widest uppercase">The chemical engineering symposium</p>
+            </div>
+        </div><!-- Hero -->
+
+        <div class="bg-base-100 py-20">
+            <div class="container">
+                <div class="grid grid-cols-12 gap-12">
+                    <div class="col-span-7">
+                        <h2 class="text-4xl font-bold mb-6">About Us</h2>
+                        <p class="text-base-content/90">AZeotropy, India's largest Chemical Engineering Symposium, is a unique mix of intriguing competitions, lecture series, panel discussions, exhibitions, workshops, and other learning-related activities. We are a non-profit organization aimed to bridge the gap between students, industry, and academia. We aim to manifest the very spirit of Chemical Engineering in young students from all corners of India, encouraging participation from 350+ colleges, 50+ industrialists of the field and an average footfall of 12000. The symposium has witnessed lectures by eminent personalities such as Gerald Fuller (Professor of Chemical Engineering at Stanford University), Douglas Buttrey (Professor at the Department of Chemical &amp; Biomolecular Engineering, University of Delaware),Abraham D Stroock(Cornell University), Harsha Bhogle (an Indian cricket Commentator and journalist) and more.</p>
+                        <div class="grid grid-cols-3 gap-4 mt-6">
+                            <div class="text-center bg-accent text-accent-content py-6 shadow-lg">
+                                <h5 class="text-2xl font-bold mb-1">300+</h5>
+                                <p>College Ambassadors</p>
+                            </div>
+                            <div class="text-center bg-accent text-accent-content py-6 shadow-lg">
+                                <h5 class="text-2xl font-bold mb-1">300+</h5>
+                                <p>Colleges</p>
+                            </div>
+                            <div class="text-center bg-accent text-accent-content py-6 shadow-lg">
+                                <h5 class="text-2xl font-bold mb-1">12000+</h5>
+                                <p>Footfalls</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-5 bg-base-content"></div>
+                </div>
+            </div>
+        </div><!-- About Us -->
+
+        <div class="bg-base-200 text-base-content text-center py-16">
+            <h2 class="text-4xl font-bold mb-4">Our Past Sponsors</h2>
+        </div><!-- Our Sponsors -->
+
+        <div class="bg-base-content text-base-100 py-20">
+            <div class="container">
+                <h2 class="text-4xl font-bold mb-10">Connect With Us</h2>
+                <div class="grid grid-cols-12 gap-12">
+                    <div class="col-span-5 bg-base-100"></div>
+                    <div class="col-span-7">
+                        <h4 class="text-2xl mb-4">Campus Ambassador</h4>
+                        <p class="text-base-300 mb-6">Through our CAMPUS AMBASSADOR PROGRAM, AZeotropy allows you to demonstrate your leadership and organisational abilities. Campus Ambassadors are AZeotropy's representatives in their respective colleges, and their job is to connect with students who are interested in participating in AZeotropy's different events, competitions, and workshops. Students from all colleges with chemical, petrochemical, or petroleum engineering programmes are encouraged to register.</p>
+                        <p>
+                            <a href="#" class="btn">
+                                Visit CA Portal<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" /></svg>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- Connect With Us -->
+
+        <div class="py-20">
+            <div class="container">
+                <h2 class="text-4xl font-bold mb-6">Eminent Personalities</h2>
+            </div>
+        </div><!-- Eminent Personalities -->
+
+        <div class="bg-base-content text-base-100 py-20">
+            <div class="container">
+                <h2 class="text-4xl font-bold text-center">Gallery</h2>
+            </div>
+        </div><!-- Gallery -->
+    </main>
+{% endblock content %}

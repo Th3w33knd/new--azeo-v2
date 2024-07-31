@@ -1,0 +1,69 @@
+<div class="navbar bg-neutral py-4 px-0">
+    <div class="container flex items-center">
+        <div class="navbar-start flex xl:block items-center justify-between w-full xl:w-1/2">
+            <a href="{% url "home" %}" class="flex items-center">
+                <img class="w-12 px-2 py-3 mr-3 bg-white rounded" src="https://www.azeotropy.org/static/assets/img/main_website_image/azeo_logo2.png" alt="Azeotropy Logo" />
+                <span class="text-white text-xl font-bold uppercase">Azeotropy</span>
+            </a>
+            <!-- Logo -->
+            <div class="dropdown dropdown-bottom dropdown-end xl:hidden">
+                <button tabindex="0" role="button" class="btn bg-neutral text-white border-white focus:bg-white focus:text-neutral px-3 xl:hidden" title="Menu Toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </button>
+                <ul tabindex="0" class="menu dropdown-content bg-base-100 text-base-content border border-neutral-content rounded-box z-[1] mt-3 w-52 p-2 shadow-lg">
+                    <li><a href="{% url "home" %}">Home</a></li>
+                    <li><a href="#">Schedule</a></li>
+                    <li><a href="#">Competitions</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Workshops</a></li>
+                    <li><a href="#">Sponsors</a></li>
+                    <li><a href="{% url "team" %}">Team</a></li>
+                    <li><a href="{% url "azeoid" %}">AZeo ID</a></li>
+                    <li><a href="#">Accomodation</a></li>
+                    <li class="items-start">
+                        {% include 'components/_theme-switcher.html' %}
+                    </li>
+                </ul>
+            </div>
+            <!-- Dropdown -->
+        </div>
+        <div class="navbar-center hidden xl:flex">
+            <ul role="navigation" class="menu menu-horizontal items-center gap-1 p-0">
+                <li>
+                    <a href="{% url "home" %}" class="text-neutral-content hover:bg-accent hover:text-accent-content">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="text-neutral-content hover:bg-accent hover:text-accent-content">Schedule</a>
+                </li>
+                <li>
+                    <a href="#" class="text-neutral-content hover:bg-accent hover:text-accent-content">Competitions</a>
+                </li>
+                <li>
+                    <a href="#" class="text-neutral-content hover:bg-accent hover:text-accent-content">Events</a>
+                </li>
+                <li>
+                    <a href="#" class="text-neutral-content hover:bg-accent hover:text-accent-content">Workshops</a>
+                </li>
+                <li>
+                    <a href="#" class="text-neutral-content hover:bg-accent hover:text-accent-content">Sponsors</a>
+                </li>
+                <li>
+                    <a href="{% url "team" %}" class="text-neutral-content hover:bg-accent hover:text-accent-content">Team</a>
+                </li>
+                <li>
+                    <a href="{% url "azeoid" %}" class="text-neutral-content hover:bg-accent hover:text-accent-content">AZeo ID</a>
+                </li>
+                <li>
+                    <a href="#" class="bg-accent text-accent-content border border-transparent hover:text-neutral-content hover:bg-accent-content hover:border-accent font-bold">Accomodation</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-end hidden xl:flex">
+            <div>
+                {% include 'components/_theme-switcher.html' %}
+            </div>
+        </div>
+    </div>
+</div>

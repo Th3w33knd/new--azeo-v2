@@ -1,0 +1,212 @@
+[
+    {
+        "model": "webapp.team",
+        "pk": 1,
+        "fields": {
+            "created_at": "2024-07-31T11:20:13.261Z",
+            "fullname": "Alok Royal",
+            "designation": "CO",
+            "role": "Overall",
+            "phone": "7878476352",
+            "email": "alokroyal.azeotropy@gmail.com",
+            "img_url": "alok-royal.jpg",
+            "linkedin": "alok-royal-alokroyal0110"
+        }
+    },
+    {
+        "model": "webapp.team",
+        "pk": 2,
+        "fields": {
+            "created_at": "2024-07-31T11:37:21.419Z",
+            "fullname": "Pranav Maniyar",
+            "designation": "MG",
+            "role": "Competition",
+            "phone": "7517005150",
+            "email": "pranav.azeotropy@gmail.com",
+            "img_url": "pranav-maniyar.jpg",
+            "linkedin": "pranav-maniyar-6b035b21a"
+        }
+    },
+    {
+        "model": "webapp.team",
+        "pk": 3,
+        "fields": {
+            "created_at": "2024-07-31T11:39:51.371Z",
+            "fullname": "Chandan",
+            "designation": "MG",
+            "role": "Competition",
+            "phone": "9372965397",
+            "email": "chandan.azeotropy@gmail.com",
+            "img_url": "chandan.jpg",
+            "linkedin": "chandansoni2025"
+        }
+    },
+    {
+        "model": "webapp.team",
+        "pk": 4,
+        "fields": {
+            "created_at": "2024-07-31T11:40:37.721Z",
+            "fullname": "Krishna Gaggar",
+            "designation": "MG",
+            "role": "Competition",
+            "phone": "9818827130",
+            "email": "krishnaiitb.azeotropy@gmail.com",
+            "img_url": "krishna-gaggar.jpg",
+            "linkedin": "krishna-gaggar-7a8838226"
+        }
+    },
+    {
+        "model": "webapp.team",
+        "pk": 5,
+        "fields": {
+            "created_at": "2024-07-31T11:41:12.681Z",
+            "fullname": "Kunal Mishra",
+            "designation": "MG",
+            "role": "Events",
+            "phone": "6388196279",
+            "email": "kunaliitb.azeotropy@gmail.com",
+            "img_url": "kunal-mishra.jpg",
+            "linkedin": "kunal-mishra-bb12b3223"
+        }
+    },
+    {
+        "model": "webapp.team",
+        "pk": 6,
+        "fields": {
+            "created_at": "2024-07-31T11:42:12.579Z",
+            "fullname": "Bhavana Moningi",
+            "designation": "MG",
+            "role": "Events",
+            "phone": "9392720787",
+            "email": "bhavana.azeotropy@gmail.com",
+            "img_url": "bhavana-moningi.jpg",
+            "linkedin": "bhavana-moningi-99451b224"
+        }
+    },
+    {
+        "model": "webapp.team",
+        "pk": 7,
+        "fields": {
+            "created_at": "2024-07-31T11:51:35.071Z",
+            "fullname": "Amit Saini",
+            "designation": "MG",
+            "role": "Marketing",
+            "phone": "7014001195",
+            "email": "amitsaini.azeotropy@gmail.com",
+            "img_url": "amit-saini.jpg",
+            "linkedin": "amit-saini-934a85227"
+        }
+    },
+    {
+        "model": "webapp.team",
+        "pk": 8,
+        "fields": {
+            "created_at": "2024-07-31T11:52:35.976Z",
+            "fullname": "Prashanth Nayak",
+            "designation": "MG",
+            "role": "Marketing",
+            "phone": "9182460989",
+            "email": "prashanth.azeotropy@gmail.com",
+            "img_url": "prashanth-nayak.jpg",
+            "linkedin": "prashanth-nayak-b41458226"
+        }
+    },
+    {
+        "model": "webapp.team",
+        "pk": 9,
+        "fields": {
+            "created_at": "2024-07-31T11:53:23.640Z",
+            "fullname": "Aditya",
+            "designation": "MG",
+            "role": "Web",
+            "phone": "9693308250",
+            "email": "aditya.azeotropy@gamail.com",
+            "img_url": "aditya.jpg",
+            "linkedin": "aditya-kumar-3aba65251"
+        }
+    },
+    {
+        "model": "webapp.team",
+        "pk": 10,
+        "fields": {
+            "created_at": "2024-07-31T11:55:13.405Z",
+            "fullname": "Sharvil Dayal",
+            "designation": "MG",
+            "role": "Web",
+            "phone": "8459793988",
+            "email": "sharvil.azeotropy@gmail.com",
+            "img_url": "sharvil-dayal.jpg",
+            "linkedin": "sharvil-dayal-987ab2223"
+        }
+    },
+    {
+        "model": "webapp.team",
+        "pk": 11,
+        "fields": {
+            "created_at": "2024-07-31T11:57:03.041Z",
+            "fullname": "Tanisha Chak",
+            "designation": "MG",
+            "role": "Public Relations",
+            "phone": "7985139628",
+            "email": "tanisha.azeotropy@gmail.com",
+            "img_url": "tanisha-chak.jpg",
+            "linkedin": "tanisha-chak-6308111b4"
+        }
+    },
+    {
+        "model": "webapp.team",
+        "pk": 12,
+        "fields": {
+            "created_at": "2024-07-31T11:58:02.949Z",
+            "fullname": "Soumya Mandal",
+            "designation": "MG",
+            "role": "Public Relation",
+            "phone": "9476327311",
+            "email": "soumyamandal.azeotropy@gmail.com",
+            "img_url": "soumya-mandal.jpg",
+            "linkedin": "soumya-mandal-b4a248262"
+        }
+    },
+    {
+        "model": "webapp.team",
+        "pk": 13,
+        "fields": {
+            "created_at": "2024-07-31T11:59:34.322Z",
+            "fullname": "Namita Nayak",
+            "designation": "MG",
+            "role": "Design",
+            "phone": "6299934884",
+            "email": "namitanayak.azeotropy@gamail.com",
+            "img_url": "namita-nayak.jpg",
+            "linkedin": "namitanayak-95588022a"
+        }
+    },
+    {
+        "model": "webapp.team",
+        "pk": 14,
+        "fields": {
+            "created_at": "2024-07-31T12:00:35.078Z",
+            "fullname": "Deepanshu Prasad",
+            "designation": "MG",
+            "role": "Operations",
+            "phone": "9589247659",
+            "email": "deepanshu.azeotropy@gamail.com",
+            "img_url": "deepanshu-prasad.jpg",
+            "linkedin": "deepanshu-prasad-16ba90227"
+        }
+    },
+    {
+        "model": "webapp.team",
+        "pk": 15,
+        "fields": {
+            "created_at": "2024-07-31T12:01:35.029Z",
+            "fullname": "Shivam",
+            "designation": "MG",
+            "role": "Operations",
+            "phone": "8860419369",
+            "email": "shivamgautam.azeotropy@gmail.com",
+            "img_url": "shivam.jpg",
+            "linkedin": "shivam-gautam-29049b239"
+        }
+    }
+]
