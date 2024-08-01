@@ -11,5 +11,12 @@ python manage.py collectstatic --no-input
 # Apply any outstanding database migrations
 python manage.py migrate
 
+
+
+# === Commands to be run only once and not on all builds ===
+
 # Seed teams Tables
-python manage.py loaddata team_data.json
+# python manage.py loaddata team_data.json
+
+# Create super user
+python manage.py createsuperuser --no-input

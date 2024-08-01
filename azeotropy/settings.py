@@ -28,13 +28,20 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+if os.getenv("ENVIRONMENT") == "DEVELOPMENT":
+    DEBUG = True
+else:
+    DEBUG = False
 
-ALLOWED_HOSTS = [".onrender.com"]
+
+# === LOCAL DEV & PRODUCTION CODE ===
+if os.getenv("ENVIRONMENT") == "DEVELOPMENT":
+    ALLOWED_HOSTS = []
+else:
+    ALLOWED_HOSTS = [".onrender.com"]
 
 
 # Application definition
-
 INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
@@ -43,20 +50,31 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "webapp",
-    # "django_browser_reload",
 ]
+
+
+# === LOCAL DEV & PRODUCTION CODE ===
+if os.getenv("ENVIRONMENT") == "DEVELOPMENT":
+    INSTALLED_APPS.append("django_browser_reload")
+
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
-    "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    # "django_browser_reload.middleware.BrowserReloadMiddleware",
 ]
+
+
+# === LOCAL DEV & PRODUCTION CODE ===
+if os.getenv("ENVIRONMENT") == "DEVELOPMENT":
+    MIDDLEWARE.append("django_browser_reload.middleware.BrowserReloadMiddleware")
+else:
+    MIDDLEWARE.insert(1, "whitenoise.middleware.WhiteNoiseMiddleware")
+
 
 ROOT_URLCONF = "azeotropy.urls"
 
@@ -82,13 +100,20 @@ WSGI_APPLICATION = "azeotropy.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DATABASES = {
-    "default": dj_database_url.config(
-        # Replace this value with your local database's connection string.
+# === LOCAL DEV & PRODUCTION CODE ===
+if os.getenv("ENVIRONMENT") == "DEVELOPMENT":
+    useDB = {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
+    }
+else:
+    useDB = dj_database_url.config(
         default=os.getenv("DATABASE_URL"),
         conn_max_age=600,
     )
-}
+
+
+DATABASES = {"default": useDB}
 
 
 # Password validation
@@ -129,7 +154,7 @@ STATIC_URL = "static/"
 
 STATICFILES_DIRS = [BASE_DIR / "static"]
 
-if not DEBUG:
+if os.getenv("ENVIRONMENT") != "DEVELOPMENT":
     # Tell Django to copy static assets into a path called `staticfiles` (this is specific to Render)
     STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
     # Enable the WhiteNoise storage backend, which compresses static files to reduce disk use

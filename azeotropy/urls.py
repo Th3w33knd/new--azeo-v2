@@ -15,6 +15,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 
+import os
 from django.contrib import admin
 from django.urls import path, include
 
@@ -22,5 +23,8 @@ from django.urls import path, include
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", include("webapp.urls")),
-    # path("__reload__/", include("django_browser_reload.urls")),
 ]
+
+# === LOCAL DEV & PRODUCTION CODE ===
+if os.getenv("ENVIRONMENT") == "DEVELOPMENT":
+    urlpatterns.append(path("__reload__/", include("django_browser_reload.urls")))

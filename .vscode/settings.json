@@ -5,5 +5,6 @@
         "**/.vscode": true,
         "**/__pycache__": true,
         "**/migrations": true
-    }
+    },
+    "editor.tabSize": 4
 }
