@@ -19,4 +19,4 @@ python manage.py migrate
 # python manage.py loaddata team_data.json
 
 # Create super user
-python manage.py createsuperuser --no-input
+# python manage.py createsuperuser --no-input
